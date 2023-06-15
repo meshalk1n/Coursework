@@ -51,6 +51,14 @@ public class Menu  extends JDialog{
                 dispose();
             }
         });
+        apartmentDatabaseButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ApartmentDatabase apartmentDatabase = new ApartmentDatabase();
+                apartmentDatabase.setVisible(true);
+                dispose();
+            }
+        });
     }
     void png(){
         ImageIcon imageIcon = new ImageIcon("src/pngMenu/exit-door.png");
@@ -82,9 +90,5 @@ public class Menu  extends JDialog{
         frame.setVisible(true);
 
          */
-    }
-    void exit(){
-        setVisible(false);
-        dispose();
     }
 }

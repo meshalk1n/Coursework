@@ -26,7 +26,7 @@
             </constraints>
             <properties>
               <font name="Consolas" size="20" style="2"/>
-              <text value="history of houses"/>
+              <text value="история домов"/>
             </properties>
           </component>
           <component id="4cf0c" class="javax.swing.JButton" binding="apartmentHistoryButton" default-binding="true">
@@ -37,7 +37,7 @@
             </constraints>
             <properties>
               <font name="Consolas" size="20" style="2"/>
-              <text value="apartment history"/>
+              <text value="история квартир"/>
             </properties>
           </component>
           <component id="8ee23" class="javax.swing.JButton" binding="backButton" default-binding="true">
@@ -48,7 +48,7 @@
             </constraints>
             <properties>
               <font name="Consolas" size="20" style="2"/>
-              <text value="back"/>
+              <text value="назад"/>
             </properties>
           </component>
         </children>

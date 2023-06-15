@@ -3,14 +3,15 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class HistorySelection extends JDialog {
+public class HistorySelectionApartmentHistoryMenu extends JDialog {
+
     private JPanel panel1;
-    private JButton apartmentHistoryButton;
-    private JButton historyOfHousesButton;
+    private JButton inProgressButton;
+    private JButton soldButton;
     private JButton backButton;
     private JLabel label1;
 
-    public HistorySelection(){
+    public HistorySelectionApartmentHistoryMenu(){
         png();
         setTitle("");
         Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
@@ -25,32 +26,32 @@ public class HistorySelection extends JDialog {
         backButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Menu menu = new Menu();
-                menu.setVisible(true);
+                HistorySelection historySelection = new HistorySelection();
+                historySelection.setVisible(true);
                 dispose();
             }
         });
-        historyOfHousesButton.addActionListener(new ActionListener() {
+        inProgressButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                HistoryHouseMenu historyHouseMenu = new HistoryHouseMenu();
-                historyHouseMenu.setVisible(true);
+                HistorySelectionApartmentHistoryMenuInProgress historySelectionApartmentHistoryMenuInProgress =
+                        new HistorySelectionApartmentHistoryMenuInProgress();
+                historySelectionApartmentHistoryMenuInProgress.setVisible(true);
                 dispose();
             }
         });
-        apartmentHistoryButton.addActionListener(new ActionListener() {
+        soldButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                HistorySelectionApartmentHistoryMenu historySelectionApartmentHistoryMenu =
-                        new HistorySelectionApartmentHistoryMenu();
-                historySelectionApartmentHistoryMenu.setVisible(true);
+                HistorySelectionApartmentHistoryMenuSold historySelectionApartmentHistoryMenuSold =
+                        new HistorySelectionApartmentHistoryMenuSold();
+                historySelectionApartmentHistoryMenuSold.setVisible(true);
                 dispose();
             }
         });
     }
     void png(){
-        ImageIcon imageIcon = new ImageIcon("src/pngHistorySelection/history.png");
+        ImageIcon imageIcon = new ImageIcon("src/pngHistorySelectionApartmentHistoryMenu/big-data.png");
         label1.setIcon(imageIcon);
     }
-
 }

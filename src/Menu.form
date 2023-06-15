@@ -34,7 +34,7 @@
                 </constraints>
                 <properties>
                   <font name="Consolas" size="20" style="2"/>
-                  <text value="history"/>
+                  <text value="история"/>
                 </properties>
               </component>
               <component id="d7ba" class="javax.swing.JButton" binding="button3">
@@ -45,7 +45,7 @@
                 </constraints>
                 <properties>
                   <font name="Consolas" size="20" style="2"/>
-                  <text value="database of houses"/>
+                  <text value="база данных домов"/>
                 </properties>
               </component>
               <component id="243b8" class="javax.swing.JButton" binding="exitButton" default-binding="true">
@@ -56,7 +56,7 @@
                 </constraints>
                 <properties>
                   <font name="Fira Code" size="20" style="2"/>
-                  <text value="exit"/>
+                  <text value="выход"/>
                 </properties>
               </component>
               <component id="66def" class="javax.swing.JButton" binding="apartmentDatabaseButton" default-binding="true">
@@ -67,7 +67,7 @@
                 </constraints>
                 <properties>
                   <font name="Consolas" size="20" style="2"/>
-                  <text value="apartment database"/>
+                  <text value="база данных квартир"/>
                 </properties>
               </component>
               <hspacer id="96999">

@@ -8,8 +8,10 @@ public class HistoryHouseMenu extends JDialog {
     private JButton soldButton;
     private JButton inProgressButton;
     private JButton backButton;
+    private JLabel label1;
 
     public HistoryHouseMenu(){
+        png();
         setTitle("");
         Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
         int x = (int) ((dimension.getWidth() - getWidth()) / 3);
@@ -28,6 +30,26 @@ public class HistoryHouseMenu extends JDialog {
                 dispose();
             }
         });
+        inProgressButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                HistoryHouseMenuInProgress historyHouseMenuInProgress = new HistoryHouseMenuInProgress();
+                historyHouseMenuInProgress.setVisible(true);
+                dispose();
+            }
+        });
+        soldButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                HistoryHouseMenuSold historyHouseMenuSold = new HistoryHouseMenuSold();
+                historyHouseMenuSold.setVisible(true);
+                dispose();
+            }
+        });
+    }
+    void png(){
+        ImageIcon imageIcon = new ImageIcon("src/pngHistoryHouseMenu/big-data.png");
+        label1.setIcon(imageIcon);
     }
 }
 

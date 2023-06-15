@@ -26,7 +26,7 @@
             </constraints>
             <properties>
               <font name="Consolas" size="20" style="2"/>
-              <text value="sold"/>
+              <text value="продано"/>
             </properties>
           </component>
           <component id="1a707" class="javax.swing.JButton" binding="inProgressButton" default-binding="true">
@@ -37,7 +37,7 @@
             </constraints>
             <properties>
               <font name="Consolas" size="20" style="2"/>
-              <text value="in progress"/>
+              <text value="в процессе"/>
             </properties>
           </component>
           <component id="1b7cb" class="javax.swing.JButton" binding="backButton" default-binding="true">
@@ -48,7 +48,7 @@
             </constraints>
             <properties>
               <font name="Consolas" size="20" style="2"/>
-              <text value="back"/>
+              <text value="назад"/>
             </properties>
           </component>
         </children>
@@ -63,7 +63,7 @@
         </properties>
         <border type="none"/>
         <children>
-          <component id="f8fb6" class="javax.swing.JLabel">
+          <component id="f8fb6" class="javax.swing.JLabel" binding="label1">
             <constraints>
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
